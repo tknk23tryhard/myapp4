@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+/* チャットのフィールド */
+#field {
+    width: 300px;
+    height: 230px;
+    padding: 7px 0 14px;
+    box-sizing: border-box;
+    background-color: #81aecf;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#input-field {
+    width: 300px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* 入力する場所 */
+#chat-input {
+    width: 80%;
+    height: 26px;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+#chat-input:focus {
+    border: 1.3px solid #38a5f3;
+    outline: none;
+}
+
+#chat-button {
+    cursor: pointer
+}
+
+#chat-ul {
+    padding: 0;
+    list-style: none;
+}
+
+#chat-ul>li {
+    margin-top: 7px;
+}
+
+#chat-ul>li>div {
+    display: inline-block;
+    box-sizing: border-box;
+    color: #000;
+    border-radius: 6px;
+    min-height: 23px;
+    max-width: 150px;
+    padding: 7px 13px;
+    font-size: 15px;
+    line-height: 1.2em;
+}
+
+/*自分の吹き出し*/
+.chat-right {
+    margin-right: 15px;
+    background: #A4E496;
+    text-align: left;
+}
+
+/*相手の吹き出しのデザイン*/
+.chat-left {
+    margin-left: 15px;
+    background: #FFF;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
